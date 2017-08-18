@@ -23,17 +23,17 @@
         
         video {
             width: 100%;
+            display: block;
         }
         
         header {
             padding: 12vh 0 154px 0;
             width: 100%;
-            height: 120px;
             flex-direction: column;
             display: flex;
             color: white;
             align-items: center;
-            background-image: url(https://pbs.twimg.com/profile_images/895370358370557954/JKnsdgkH_400x400.jpg);
+            background-image: url(https://firebasestorage.googleapis.com/v0/b/async-await.appspot.com/o/bg.jpg?alt=media&token=6da84fe9-cf93-460e-bee4-e17f9e13d39a);
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -50,6 +50,13 @@
             text-shadow: 1px 1px black;
         }
         
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 30px;
+        }
+        
         span {
             display: block;
             width: 40px;
@@ -62,33 +69,38 @@
             }
             header {
                 padding: 0 0px 0 0;
-                background-size: contain;
                 height: 130px;
-                background-color: #3FC772;
                 flex-direction: row;
                 width: 100%;
             }
             h1 {
                 background-color: transparent;
-                padding-left: 150px;
             }
         }
     </style>
 </head>
 
 <body>
+    <video playsinline muted autoplay preload loop poster="https://firebasestorage.googleapis.com/v0/b/async-await.appspot.com/o/async-await-animatin-by-wassimchegham-poster.png?alt=media&token=4cac637f-4d3b-4352-a4c3-2870d4077b61">
+      <source src="https://firebasestorage.googleapis.com/v0/b/async-await.appspot.com/o/async-await.webm?alt=media&token=fbabcd5a-0d1c-4d82-a7a3-5d6471ca6174" type="video/webm">
+      <source src="https://firebasestorage.googleapis.com/v0/b/async-await.appspot.com/o/async-await.mp4?alt=media&token=585d0266-22b5-4589-9f9e-c9fef6d7c02e" type="video/mp4">
+      <source src="https://firebasestorage.googleapis.com/v0/b/async-await.appspot.com/o/async-await.mp4?alt=media&token=585d0266-22b5-4589-9f9e-c9fef6d7c02e" type="video/mp4">
+      <blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">understanding async/await in 7 seconds <a href="https://t.co/IJOQJ2DR35">pic.twitter.com/IJOQJ2DR35</a></p>&mdash; Wassim Chegham シ (@manekinekko) <a href="https://twitter.com/manekinekko/status/855824609299636230">April 22, 2017</a></blockquote>
+    </video>
     <header>
+        <img width="80px" height="80px" src="https://avatars1.githubusercontent.com/u/1699357?v=4&u=ddee746e349b38ef46219c0da972e4011e172b94&s=400" alt="">
         <div>
-            <h1>JavaScript Async/Await.</h1>
+            <h1>JavaScript Async/Await in a single animation.</h1>
         </div>
         <a href="https://twitter.com/manekinekko" class="twitter-follow-button" data-show-count="false">Follow @manekinekko</a>
         <span></span>
     </header>
-    <video muted autoplay loop src="https://firebasestorage.googleapis.com/v0/b/async-await.appspot.com/o/async-await.m4v?alt=media&token=1dc14db4-6f61-48d6-9997-2044dd281ae3">
-      <blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">understanding async/await in 7 seconds <a href="https://t.co/IJOQJ2DR35">pic.twitter.com/IJOQJ2DR35</a></p>&mdash; Wassim Chegham シ (@manekinekko) <a href="https://twitter.com/manekinekko/status/855824609299636230">April 22, 2017</a></blockquote>
-    </video>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+    <!--[if lt IE 9]>
+    <script>
+      document.createElement('video');
+    </script>
+    <![endif]-->
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
