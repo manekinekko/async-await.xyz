@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Async/Await in JavaScript</title>
+    <style media="screen">
+        body {
+            display: block;
+            background: white;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        
+        video {
+            width: 100%;
+        }
+        
+        header {
+            padding: 12vh 0 154px 0;
+            width: 100%;
+            height: 120px;
+            flex-direction: column;
+            display: flex;
+            color: white;
+            align-items: center;
+            background-image: url(https://pbs.twimg.com/profile_images/895370358370557954/JKnsdgkH_400x400.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        div {
+            flex: 1;
+        }
+        
+        h1 {
+            font-size: 3em;
+            padding: 13px;
+            color: white;
+            background: rgba(0, 0, 0, 0.23);
+            text-shadow: 1px 1px black;
+        }
+        
+        span {
+            display: block;
+            width: 40px;
+        }
+        
+        @media (min-width: 1440px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            header {
+                padding: 0 0px 0 0;
+                background-size: contain;
+                height: 130px;
+                background-color: #3FC772;
+                flex-direction: row;
+                width: 100%;
+            }
+            h1 {
+                background-color: transparent;
+                padding-left: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>JavaScript Async/Await.</h1>
+        </div>
+        <a href="https://twitter.com/manekinekko" class="twitter-follow-button" data-show-count="false">Follow @manekinekko</a>
+        <span></span>
+    </header>
+    <video muted autoplay loop src="https://firebasestorage.googleapis.com/v0/b/async-await.appspot.com/o/async-await.m4v?alt=media&token=1dc14db4-6f61-48d6-9997-2044dd281ae3">
+      <blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">understanding async/await in 7 seconds <a href="https://t.co/IJOQJ2DR35">pic.twitter.com/IJOQJ2DR35</a></p>&mdash; Wassim Chegham シ (@manekinekko) <a href="https://twitter.com/manekinekko/status/855824609299636230">April 22, 2017</a></blockquote>
+    </video>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-104909925-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
